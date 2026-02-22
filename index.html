@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Learning Roadmap</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+            animation: slideDown 0.6s ease-out;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .roadmap {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .section {
+            background: white;
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            animation: fadeInUp 0.6s ease-out;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(0,0,0,0.3);
+        }
+
+        .section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+            font-size: 1.8em;
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 10px;
+        }
+
+        .topic {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+
+        .topic:hover {
+            background: #e8eaf6;
+            border-left-color: #764ba2;
+        }
+
+        .topic h3 {
+            color: #333;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+
+        .topic a {
+            display: inline-block;
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 8px;
+            padding: 8px 12px;
+            background: white;
+            border-radius: 5px;
+            border: 2px solid #667eea;
+        }
+
+        .topic a:hover {
+            background: #667eea;
+            color: white;
+            transform: translateX(5px);
+        }
+
+        .topic p {
+            color: #666;
+            font-size: 0.9em;
+            margin-top: 5px;
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 50px;
+            padding: 20px;
+            opacity: 0.8;
+        }
+
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2em;
+            }
+
+            .roadmap {
+                grid-template-columns: 1fr;
+            }
+
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🚀 Tech Learning Roadmap</h1>
+            <p>Your comprehensive guide to mastering Data Science, Machine Learning & DevOps</p>
+        </header>
+
+        <div class="roadmap">
+            <!-- BASICS SECTION -->
+            <div class="section">
+                <h2>📚 Basics</h2>
+                
+                <div class="topic">
+                    <h3>Mathematics</h3>
+                    <p>Linear Algebra, Calculus, Statistics fundamentals</p>
+                    <a href="https://www.3blue1brown.com/topics/linear-algebra" target="_blank">3Blue1Brown Essense of Linear Algebra</a>
+                </div>
+
+                <div class="topic">
+                    <h3>HTML/CSS/JavaScript</h3>
+                    <p>Web fundamentals and frontend development</p>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/" target="_blank">MDN Web Docs</a>
+                    <a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank">FreeCodeCamp Web Design</a>
+                </div>
+
+                <div class="topic">
+                    <h3>Python</h3>
+                    <p>Core Python programming language</p>
+                    <a href="https://www.python.org/doc/" target="_blank">Official Python Documentation</a>
+                    <a href="https://www.freecodecamp.org/learn/python-for-beginners/" target="_blank">FreeCodeCamp Python</a>
+                </div>
+
+                <div class="topic">
+                    <h3>Basic Libraries</h3>
+                    <p>NumPy, Pandas, Matplotlib fundamentals</p>
+                    <a href="https://numpy.org/doc/" target="_blank">NumPy Documentation</a>
+                    <a href="https://pandas.pydata.org/docs/" target="_blank">Pandas Documentation</a>
+                    <a href="https://matplotlib.org/stable/contents.html" target="_blank">Matplotlib Documentation</a>
+                </div>
+            </div>
+
+            <!-- ML SECTION -->
+            <div class="section">
+                <h2>🤖 Machine Learning</h2>
+                
+                <div class="topic">
+                    <h3>100 Days of ML by CampusX</h3>
+                    <p>Structured ML course with daily lessons</p>
+                    <a href="https://www.youtube.com/@campusx-official" target="_blank">CampusX YouTube Channel</a>
+                    <a href="https://github.com/campusx-official" target="_blank">CampusX GitHub</a>
+                </div>
+
+                <div class="topic">
+                    <h3>ML Projects by CampusX</h3>
+                    <p>Hands-on project-based learning</p>
+                    <a href="https://www.youtube.com/playlist?list=PLKnIA16_Rmvakn3-tTy5-gDmhIjR1rGlm" target="_blank">ML Projects Playlist</a>
+                </div>
+
+                <div class="topic">
+                    <h3>Additional Resources</h3>
+                    <p>Andrew Ng's ML course and more</p>
+                    <a href="https://www.coursera.org/learn/machine-learning" target="_blank">Andrew Ng ML Course (Coursera)</a>
+                    <a href="https://scikit-learn.org/stable/" target="_blank">Scikit-learn Documentation</a>
+                </div>
+            </div>
+
+            <!-- DATA SCIENCE SECTION -->
+            <div class="section">
+                <h2>📊 Data Science</h2>
+                
+                <div class="topic">
+                    <h3>Web Scraping</h3>
+                    <p>Extract data from websites</p>
+                    <a href="https://docs.python-requests.org/" target="_blank">Requests Library</a>
+                    <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank">BeautifulSoup Documentation</a>
+                    <a href="https://selenium-python.readthedocs.io/" target="_blank">Selenium Documentation</a>
+                </div>
+
+                <div class="topic">
+                    <h3>Django</h3>
+                    <p>Backend web development framework</p>
+                    <a href="https://docs.djangoproject.com/" target="_blank">Django Official Documentation</a>
+                    <a href="https://www.youtube.com/c/DjangoForBeginners" target="_blank">Dennis Ivy Django Tutorials</a>
+                </div>
+
+                <div class="topic">
+                    <h3>Tkinter</h3>
+                    <p>Desktop GUI application development</p>
+                    <a href="https://docs.python.org/3/library/tkinter.html" target="_blank">Tkinter Official Documentation</a>
+                    <a href="https://www.geeksforgeeks.org/python-tkinter-tutorial/" target="_blank">GeeksforGeeks Tkinter Tutorial</a>
+                </div>
+            </div>
+
+            <!-- DEEP LEARNING SECTION -->
+            <div class="section">
+                <h2>🧠 Deep Learning</h2>
+                
+                <div class="topic">
+                    <h3>100 Days of DL by CampusX</h3>
+                    <p>Structured deep learning course</p>
+                    <a href="https://www.youtube.com/playlist?list=PLKnIA16_RmvYZ59L0L-3bpqJMdXHMeOnv" target="_blank">100 Days of DL Playlist</a>
+                </div>
+
+                <div class="topic">
+                    <h3>DL Projects by CampusX</h3>
+                    <p>Hands-on deep learning projects</p>
+                    <a href="https://www.youtube.com/c/campusx-official" target="_blank">CampusX Channel</a>
+                </div>
+
+                <div class="topic">
+                    <h3>TensorFlow by IBM</h3>
+                    <p>IBM free courses on Coursera</p>
+                    <a href="https://www.coursera.org/professional-certificates/tf-introduction" target="_blank">TensorFlow Professional Certificate</a>
+                    <a href="https://www.ibm.com/training" target="_blank">IBM Training Portal</a>
+                </div>
+
+                <div class="topic">
+                    <h3>Additional Frameworks</h3>
+                    <p>PyTorch, Keras</p>
+                    <a href="https://pytorch.org/tutorials/" target="_blank">PyTorch Tutorials</a>
+                    <a href="https://keras.io/" target="_blank">Keras Documentation</a>
+                </div>
+            </div>
+
+            <!-- DEVOPS SECTION -->
+            <div class="section">
+                <h2>⚙️ DevOps</h2>
+                
+                <div class="topic">
+                    <h3>Containerization</h3>
+                    <p>Docker and container technologies</p>
+                    <a href="https://www.linkedin.com/learning/docker-essential-training" target="_blank">LinkedIn Learning Docker Course</a>
+                    <a href="https://docs.docker.com/" target="_blank">Docker Official Documentation</a>
+                </div>
+
+                <div class="topic">
+                    <h3>CI/CD Pipeline</h3>
+                    <p>Continuous Integration & Deployment</p>
+                    <a href="https://www.linkedin.com/learning/jenkins-essential-training" target="_blank">LinkedIn Learning Jenkins Course</a>
+                    <a href="https://www.youtube.com/results?search_query=CI+CD+pipeline+tutorial" target="_blank">YouTube CI/CD Tutorials</a>
+                    <a href="https://github.com/features/actions" target="_blank">GitHub Actions</a>
+                </div>
+
+                <div class="topic">
+                    <h3>AWS - EC2, RDS & S3</h3>
+                    <p>AWS core services from GFG DevOps</p>
+                    <a href="https://www.geeksforgeeks.org/aws-ec2/" target="_blank">GFG AWS EC2 Tutorial</a>
+                    <a href="https://www.geeksforgeeks.org/amazon-rds/" target="_blank">GFG RDS Tutorial</a>
+                    <a href="https://www.geeksforgeeks.org/amazon-s3/" target="_blank">GFG S3 Tutorial</a>
+                </div>
+
+                <div class="topic">
+                    <h3>AWS Solutions Architect</h3>
+                    <p>AWS SAA certification course by GFG</p>
+                    <a href="https://www.geeksforgeeks.org/aws-solutions-architect-associate/" target="_blank">GFG AWS SAA Course</a>
+                    <a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/" target="_blank">AWS Official SAA Certification</a>
+                </div>
+            </div>
+
+            <!-- CYBERSECURITY SECTION -->
+            <div class="section">
+                <h2>🔐 Cybersecurity</h2>
+                
+                <div class="topic">
+                    <h3>Foundations (CompTIA Track)</h3>
+                    <p>Core cybersecurity fundamentals: networking, security, and systems</p>
+                    <a href="https://www.comptia.org/certifications/security" target="_blank">CompTIA Security+</a>
+                    <a href="https://www.comptia.org/certifications/network" target="_blank">CompTIA Network+</a>
+                    <a href="https://www.comptia.org/certifications/a" target="_blank">CompTIA A+</a>
+                    <a href="https://www.udemy.com/topic/comptia-security-plus/" target="_blank">Udemy CompTIA Security+ All-in-One Courses</a>
+                </div>
+
+                <div class="topic">
+                    <h3>Hands-on Ethical Hacking</h3>
+                    <p>Practical penetration testing and offensive security</p>
+                    <a href="https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/" target="_blank">CEH Official Certification</a>
+                    <a href="https://www.offsec.com/courses/pen-200/" target="_blank">OSCP (Offensive Security)</a>
+                    <a href="https://tryhackme.com/" target="_blank">TryHackMe Platform</a>
+                    <a href="https://www.hackthebox.com/" target="_blank">Hack The Box Labs</a>
+                </div>
+
+                <div class="topic">
+                    <h3>Advanced Security Architecture</h3>
+                    <p>Enterprise security management and governance</p>
+                    <a href="https://www.isc2.org/Certifications/CISSP" target="_blank">CISSP Official (ISC2)</a>
+                    <a href="https://www.isaca.org/credentialing/cism" target="_blank">CISM Certification</a>
+                    <a href="https://www.udemy.com/topic/cissp/" target="_blank">Udemy CISSP All-in-One Prep</a>
+                    <a href="https://www.isc2.org/Training/Self-Study-Resources" target="_blank">ISC2 Official Documentation</a>
+                </div>
+
+                <div class="topic">
+                    <h3>Cloud Security</h3>
+                    <p>Secure AWS & Azure infrastructure</p>
+                    <a href="https://aws.amazon.com/certification/certified-security-specialty/" target="_blank">AWS Security Specialty</a>
+                    <a href="https://learn.microsoft.com/en-us/credentials/certifications/azure-security-engineer/" target="_blank">Azure Security Engineer (AZ-500)</a>
+                    <a href="https://aws.amazon.com/training/" target="_blank">AWS Official Security Training</a>
+                </div>
+            </div>
+
+            <!-- DEVSECOPS SECTION -->
+            <div class="section">
+                <h2>🛡️ DevSecOps</h2>
+                
+                <div class="topic">
+                    <h3>DevSecOps Fundamentals</h3>
+                    <p>Integrating security into CI/CD pipelines</p>
+                    <a href="https://roadmap.sh/devsecops" target="_blank">DevSecOps Roadmap</a>
+                    <a href="https://owasp.org/www-project-top-ten/" target="_blank">OWASP Top 10</a>
+                    <a href="https://owasp.org/www-project-devsecops-guideline/" target="_blank">OWASP DevSecOps Guidelines</a>
+                </div>
+
+                <div class="topic">
+                    <h3>Secure CI/CD</h3>
+                    <p>Pipeline security, scanning, and automation</p>
+                    <a href="https://docs.github.com/en/actions/security-guides" target="_blank">GitHub Actions Security</a>
+                    <a href="https://www.jenkins.io/doc/book/security/" target="_blank">Jenkins Security Documentation</a>
+                    <a href="https://snyk.io/" target="_blank">Snyk Vulnerability Scanning</a>
+                </div>
+
+                <div class="topic">
+                    <h3>Container & Kubernetes Security</h3>
+                    <p>Securing Docker images and Kubernetes clusters</p>
+                    <a href="https://docs.docker.com/engine/security/" target="_blank">Docker Security Documentation</a>
+                    <a href="https://kubernetes.io/docs/concepts/security/" target="_blank">Kubernetes Security Concepts</a>
+                    <a href="https://aquasecurity.github.io/trivy/" target="_blank">Trivy Security Scanner</a>
+                </div>
+
+                <div class="topic">
+                    <h3>Infrastructure as Code Security</h3>
+                    <p>Terraform security and cloud misconfiguration prevention</p>
+                    <a href="https://developer.hashicorp.com/terraform/tutorials/security" target="_blank">Terraform Security Tutorials</a>
+                    <a href="https://checkov.io/" target="_blank">Checkov IaC Scanner</a>
+                    <a href="https://cloudcustodian.io/" target="_blank">Cloud Custodian</a>
+                </div>
+            </div>
+
+            <!-- MLOPS SECTION -->
+            <div class="section">
+                <h2>🔄 MLOps</h2>
+                
+                <div class="topic">
+                    <h3>100 Days of MLOps by CampusX</h3>
+                    <p>MLOps best practices and workflows</p>
+                    <a href="https://www.youtube.com/playlist?list=PLKnIA16_Rmvazf3bKb3JD8pLVHm0ySQRR" target="_blank">100 Days of MLOps Playlist</a>
+                </div>
+
+                <div class="topic">
+                    <h3>ML Model Deployment</h3>
+                    <p>Tools and frameworks for production ML</p>
+                    <a href="https://www.mlflow.org/" target="_blank">MLflow Documentation</a>
+                    <a href="https://www.kubeflow.org/" target="_blank">Kubeflow Documentation</a>
+                </div>
+
+                <div class="topic">
+                    <h3>Model Monitoring & Versioning</h3>
+                    <p>Track and manage ML models</p>
+                    <a href="https://dvc.org/" target="_blank">DVC (Data Version Control)</a>
+                    <a href="https://github.com/iterative/dvc" target="_blank">DVC GitHub Repository</a>
+                </div>
+            </div>
+
+            <!-- REINFORCEMENT LEARNING SECTION -->
+            <div class="section">
+                <h2>🎯 Reinforcement Learning</h2>
+                
+                <div class="topic">
+                    <h3>GPT Models</h3>
+                    <p>Large Language Models and Transformers</p>
+                    <a href="https://openai.com/api/" target="_blank">OpenAI API Documentation</a>
+                    <a href="https://huggingface.co/transformers/" target="_blank">HuggingFace Transformers</a>
+                    <a href="https://www.youtube.com/results?search_query=attention+is+all+you+need" target="_blank">Attention Mechanism Tutorials</a>
+                </div>
+
+                <div class="topic">
+                    <h3>Self-Driving Cars</h3>
+                    <p>Autonomous vehicle technologies</p>
+                    <a href="https://github.com/udacity/self-driving-car" target="_blank">Udacity Self-Driving Car Project</a>
+                    <a href="https://www.coursera.org/specializations/self-driving-cars" target="_blank">Coursera Self-Driving Cars Specialization</a>
+                </div>
+
+                <div class="topic">
+                    <h3>RL Fundamentals</h3>
+                    <p>Q-Learning, Policy Gradient Methods</p>
+                    <a href="https://www.deepmind.com/" target="_blank">DeepMind Research</a>
+                    <a href="https://stable-baselines3.readthedocs.io/" target="_blank">Stable Baselines3 Library</a>
+                </div>
+            </div>
+
+            <!-- END-TO-END PROJECTS SECTION -->
+            <div class="section">
+                <h2>🎓 End-to-End Projects</h2>
+                
+                <div class="topic">
+                    <h3>Full ML Pipeline Projects</h3>
+                    <p>Complete machine learning solutions</p>
+                    <a href="https://www.kaggle.com/competitions" target="_blank">Kaggle Competitions</a>
+                    <a href="https://github.com/topics/machine-learning-projects" target="_blank">GitHub ML Projects</a>
+                </div>
+
+                <div class="topic">
+                    <h3>Full DL Pipeline Projects</h3>
+                    <p>Deep learning from data to deployment</p>
+                    <a href="https://www.youtube.com/results?search_query=end+to+end+deep+learning+project" target="_blank">YouTube End-to-End Tutorials</a>
+                </div>
+
+                <div class="topic">
+                    <h3>Portfolio Projects</h3>
+                    <p>Build real-world applications</p>
+                    <a href="https://github.com" target="_blank">GitHub for Version Control</a>
+                    <a href="https://www.heroku.com/" target="_blank">Heroku Deployment Platform</a>
+                </div>
+
+                <div class="topic">
+                    <h3>Data to Insights</h3>
+                    <p>Complete data science projects</p>
+                    <a href="https://medium.com/towards-data-science" target="_blank">Towards Data Science Blog</a>
+                    <a href="https://analyticsvidhya.com/" target="_blank">Analytics Vidhya Community</a>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>💡 Follow this roadmap sequentially for complete Data Science.</p>
+        </footer>
+    </div>
+</body>
+</html>
