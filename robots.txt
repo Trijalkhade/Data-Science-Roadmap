@@ -1,0 +1,33 @@
+User-agent: *
+Allow: /
+Crawl-delay: 1
+
+# Allow search engines to crawl all important content
+Allow: /index.html
+Allow: /google23498ce14e712999.html
+
+# Block unnecessary files
+Disallow: /.git/
+Disallow: /node_modules/
+Disallow: *.tmp
+Disallow: *.log
+
+# Sitemap location
+Sitemap: https://data-science-roadmap.vercel.app/sitemap.xml
+
+# Additional instructions for better crawling
+# Prioritize main content
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Allow educational crawlers
+User-agent: bingbot
+Allow: /
+Crawl-delay: 1
+
+# Allow AI/ML training crawlers (relevant for data science content)
+User-agent: GPTBot
+Allow: /
+User-agent: Google-Extended
+Allow: /

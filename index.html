@@ -22,6 +22,12 @@ SITEMAP.XML (create separately later)
 <head>
     <meta charset="UTF-8">
 
+    <!-- PERFORMANCE OPTIMIZATION -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://www.youtube.com">
+    <link rel="dns-prefetch" href="https://github.com">
+    <link rel="dns-prefetch" href="https://www.coursera.org">
+    
     <!-- PRIMARY SEO -->
     <title>Data Science Roadmap 2026 | Machine Learning, AI, MLOps Complete Guide</title>
 
@@ -69,21 +75,195 @@ SITEMAP.XML (create separately later)
     <!-- CANONICAL -->
     <link rel="canonical" href="https://data-science-roadmap.vercel.app/">
 
-    <!-- STRUCTURED DATA (VERY IMPORTANT FOR GOOGLE) -->
+    <!-- ENHANCED STRUCTURED DATA -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "EducationalOccupationalProgram",
-      "name": "Data Science Roadmap",
-      "description": "Step by step roadmap to become a data scientist including machine learning, deep learning, AI, Cybersecurity and MLOps",
+      "name": "Complete Data Science Roadmap 2026",
+      "description": "Step-by-step comprehensive roadmap to become a Data Scientist, ML Engineer, or AI Engineer. Includes machine learning, deep learning, MLOps, DevOps, cybersecurity, and real-world projects for beginners to advanced learners.",
+      "url": "https://data-science-roadmap.vercel.app/",
       "provider": {
         "@type": "Organization",
-        "name": "Tech Learning Roadmap"
+        "name": "Tech Learning Roadmap",
+        "url": "https://data-science-roadmap.vercel.app/"
+      },
+      "educationalLevel": "Beginner to Advanced",
+      "timeRequired": "PT1200H",
+      "programPrerequisites": "Basic computer skills, high school mathematics",
+      "hasCourse": [
+        {
+          "@type": "Course",
+          "name": "Data Science Fundamentals",
+          "description": "Learn Python, NumPy, Pandas, and data analysis basics",
+          "provider": {
+            "@type": "Organization",
+            "name": "Tech Learning Roadmap"
+          }
+        },
+        {
+          "@type": "Course", 
+          "name": "Machine Learning Engineering",
+          "description": "Master ML algorithms, scikit-learn, and practical projects",
+          "provider": {
+            "@type": "Organization",
+            "name": "Tech Learning Roadmap"
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "Deep Learning & AI",
+          "description": "Neural networks, TensorFlow, PyTorch, and advanced AI concepts",
+          "provider": {
+            "@type": "Organization", 
+            "name": "Tech Learning Roadmap"
+          }
+        },
+        {
+          "@type": "Course",
+          "name": "MLOps & Production",
+          "description": "Deploy ML models, CI/CD pipelines, and production systems",
+          "provider": {
+            "@type": "Organization",
+            "name": "Tech Learning Roadmap"
+          }
+        }
+      ],
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD",
+        "availability": "https://schema.org/InStock"
+      },
+      "inLanguage": "en",
+      "isAccessibleForFree": true,
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": "student"
       }
     }
     </script>
 
+    <!-- FAQ SCHEMA FOR COMMON QUESTIONS -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "How long does it take to become a data scientist?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "With this comprehensive roadmap, most learners can become job-ready data scientists in 6-12 months of consistent study, assuming 15-20 hours per week. The timeline varies based on your background and prior experience."
+          }
+        },
+        {
+          "@type": "Question", 
+          "name": "Is this roadmap suitable for computer engineering students?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes! This roadmap is specifically designed for computer engineering students and beginners. It starts with fundamentals and progresses to advanced topics, making it perfect for students transitioning into data science and AI roles."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What programming languages are covered in this roadmap?",
+          "acceptedAnswer": {
+            "@type": "Answer", 
+            "text": "This roadmap primarily focuses on Python as the main language for data science, along with HTML/CSS/JavaScript for web development, and includes exposure to SQL for database management and shell scripting for DevOps."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Are all resources in this roadmap free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Most resources are free! We prioritize official documentation, free courses from top platforms, and open-source tools. Some optional paid certifications are mentioned but aren't required to complete the learning path."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What projects will I build in this roadmap?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "You'll build end-to-end projects including ML models, web applications, data pipelines, and production systems. Projects range from beginner-level data analysis to advanced deep learning and MLOps implementations."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <!-- BREADCRUMB STRUCTURED DATA -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://data-science-roadmap.vercel.app/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Data Science Roadmap",
+          "item": "https://data-science-roadmap.vercel.app/"
+        }
+      ]
+    }
+    </script>
+
     <style>
+        /* PERFORMANCE OPTIMIZATIONS */
+        .section {
+            will-change: transform;
+            contain: layout style paint;
+        }
+        
+        .topic {
+            contain: layout style;
+        }
+
+        /* Breadcrumb Navigation */
+        .breadcrumb {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            backdrop-filter: blur(10px);
+        }
+
+        .breadcrumb ul {
+            list-style: none;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .breadcrumb li {
+            color: rgba(255, 255, 255, 0.8);
+            font-size: 0.9em;
+        }
+
+        .breadcrumb li:not(:last-child)::after {
+            content: "›";
+            margin: 0 10px;
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .breadcrumb a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .breadcrumb a:hover {
+            color: #ffd700;
+        }
+
         * {
             margin: 0;
             padding: 0;
@@ -241,166 +421,242 @@ SITEMAP.XML (create separately later)
 </head>
 <body>
     <div class="container">
+        <!-- Breadcrumb Navigation -->
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+            <ul>
+                <li><a href="https://data-science-roadmap.vercel.app/">Home</a></li>
+                <li>Data Science Complete Roadmap 2026</li>
+            </ul>
+        </nav>
+
         <header>
-            <h1>🚀 Tech Learning Roadmap</h1>
-            <p>Your comprehensive guide to mastering Data Science, Machine Learning & DevOps</p>
+            <h1>🚀 Complete Data Science Roadmap 2026</h1>
+            <p>Beginner to Production roadmap for Computer Engineering Students | Learn Data Science, Machine Learning, AI & MLOps Step-by-Step</p>
         </header>
 
         <div class="roadmap">
             <!-- BASICS SECTION -->
-            <div class="section">
-                <h2>📚 Basics</h2>
+            <div class="section" id="basics">
+                <h2>📚 Data Science Fundamentals</h2>
                 
                 <div class="topic">
-                    <h3>Mathematics</h3>
-                    <p>Linear Algebra, Calculus, Statistics fundamentals</p>
-                    <a href="https://www.3blue1brown.com/topics/linear-algebra" target="_blank">3Blue1Brown Essense of Linear Algebra</a>
+                    <h3>Mathematics for Data Science</h3>
+                    <p>Master Linear Algebra, Calculus, and Statistics - the mathematical foundations essential for machine learning and data analysis. Perfect for computer engineering students building strong analytical skills.</p>
+                    <a href="https://www.3blue1brown.com/topics/linear-algebra" target="_blank">3Blue1Brown Essence of Linear Algebra</a>
+                    <a href="https://www.khanacademy.org/math/statistics-probability" target="_blank">Khan Academy Statistics</a>
+                    <a href="https://www.coursera.org/learn/machine-learning-mathematics" target="_blank">Mathematics for Machine Learning</a>
                 </div>
 
                 <div class="topic">
-                    <h3>HTML/CSS/JavaScript</h3>
-                    <p>Web fundamentals and frontend development</p>
+                    <h3>Web Development Fundamentals</h3>
+                    <p>Learn HTML, CSS, and JavaScript - essential skills for creating data visualization dashboards and web applications. Build the foundation for deploying ML models online.</p>
                     <a href="https://developer.mozilla.org/en-US/docs/Web/" target="_blank">MDN Web Docs</a>
                     <a href="https://www.freecodecamp.org/learn/responsive-web-design/" target="_blank">FreeCodeCamp Web Design</a>
+                    <a href="https://www.theodinproject.com/paths/foundations/courses/foundations" target="_blank">The Odin Project</a>
                 </div>
 
                 <div class="topic">
-                    <h3>Python</h3>
-                    <p>Core Python programming language</p>
+                    <h3>Python Programming Mastery</h3>
+                    <p>Complete Python programming guide for data science. From basics to advanced concepts including data structures, algorithms, and object-oriented programming.</p>
                     <a href="https://www.python.org/doc/" target="_blank">Official Python Documentation</a>
-                    <a href="https://www.freecodecamp.org/learn/python-for-beginners/" target="_blank">FreeCodeCamp Python</a>
+                    <a href="https://www.freecodecamp.org/learn/python-for-beginners/" target="_blank">FreeCodeCamp Python Course</a>
+                    <a href="https://realpython.com/" target="_blank">Real Python Tutorials</a>
                 </div>
 
                 <div class="topic">
-                    <h3>Basic Libraries</h3>
-                    <p>NumPy, Pandas, Matplotlib fundamentals</p>
+                    <h3>Data Science Core Libraries</h3>
+                    <p>Master NumPy for numerical computing, Pandas for data manipulation, and Matplotlib/Seaborn for data visualization. Essential tools for every data scientist.</p>
                     <a href="https://numpy.org/doc/" target="_blank">NumPy Documentation</a>
                     <a href="https://pandas.pydata.org/docs/" target="_blank">Pandas Documentation</a>
                     <a href="https://matplotlib.org/stable/contents.html" target="_blank">Matplotlib Documentation</a>
+                    <a href="https://seaborn.pydata.org/" target="_blank">Seaborn Documentation</a>
                 </div>
             </div>
 
             <!-- ML SECTION -->
-            <div class="section">
-                <h2>🤖 Machine Learning</h2>
+            <div class="section" id="machine-learning">
+                <h2>🤖 Machine Learning Engineering</h2>
                 
                 <div class="topic">
                     <h3>100 Days of ML by CampusX</h3>
-                    <p>Structured ML course with daily lessons</p>
+                    <p>Comprehensive machine learning course with daily lessons. Perfect for beginners to advanced learners. Covers supervised learning, unsupervised learning, and practical ML implementations.</p>
                     <a href="https://www.youtube.com/@campusx-official" target="_blank">CampusX YouTube Channel</a>
-                    <a href="https://github.com/campusx-official" target="_blank">CampusX GitHub</a>
+                    <a href="https://github.com/campusx-official" target="_blank">CampusX GitHub Repository</a>
+                    <a href="https://campusx-official.medium.com/" target="_blank">CampusX Medium Articles</a>
                 </div>
 
                 <div class="topic">
-                    <h3>ML Projects by CampusX</h3>
-                    <p>Hands-on project-based learning</p>
+                    <h3>Hands-on ML Projects</h3>
+                    <p>Build real-world machine learning projects from scratch. Learn data preprocessing, model training, evaluation, and deployment. Essential for building a strong ML portfolio.</p>
                     <a href="https://www.youtube.com/playlist?list=PLKnIA16_Rmvakn3-tTy5-gDmhIjR1rGlm" target="_blank">ML Projects Playlist</a>
+                    <a href="https://github.com/campusx-official/100-days-of-machine-learning" target="_blank">Project Code Repository</a>
+                    <a href="https://www.kaggle.com/learn/intro-to-machine-learning" target="_blank">Kaggle ML Course</a>
                 </div>
 
                 <div class="topic">
-                    <h3>Additional Resources</h3>
-                    <p>Andrew Ng's ML course and more</p>
+                    <h3>Advanced ML Theory & Algorithms</h3>
+                    <p>Deep dive into machine learning theory, algorithms, and mathematical foundations. Learn from world-class instructors and master both classical and modern ML techniques.</p>
                     <a href="https://www.coursera.org/learn/machine-learning" target="_blank">Andrew Ng ML Course (Coursera)</a>
-                    <a href="https://scikit-learn.org/stable/" target="_blank">Scikit-learn Documentation</a>
+                    <a href="https://scikit-learn.org/stable/" target="_blank">Scikit-learn Official Documentation</a>
+                    <a href="https://statweb.stanford.edu/~tibs/ElemStatLearn/" target="_blank">Elements of Statistical Learning</a>
+                    <a href="https://www.cs.cornell.edu/courses/4780/2023sp/" target="_blank">Cornell ML Course</a>
+                </div>
+
+                <div class="topic">
+                    <h3>ML Interview Preparation</h3>
+                    <p>Prepare for data science and ML engineer interviews. Practice common interview questions, coding challenges, and system design problems.</p>
+                    <a href="https://www.interviewbit.com/courses/machine-learning/" target="_blank">InterviewBit ML Preparation</a>
+                    <a href="https://leetcode.com/tag/machine-learning/" target="_blank">LeetCode ML Problems</a>
+                    <a href="https://github.com/khangcheng/machine-learning-interview" target="_blank">ML Interview Questions</a>
                 </div>
             </div>
 
             <!-- DATA SCIENCE SECTION -->
-            <div class="section">
-                <h2>📊 Data Science</h2>
+            <div class="section" id="data-science">
+                <h2>📊 Applied Data Science & Engineering</h2>
                 
                 <div class="topic">
-                    <h3>Web Scraping</h3>
-                    <p>Extract data from websites</p>
-                    <a href="https://docs.python-requests.org/" target="_blank">Requests Library</a>
+                    <h3>Advanced Web Scraping & Data Collection</h3>
+                    <p>Master web scraping techniques to collect data from websites. Learn Requests, BeautifulSoup, Selenium, and advanced scraping strategies for data science projects.</p>
+                    <a href="https://docs.python-requests.org/" target="_blank">Requests Library Documentation</a>
                     <a href="https://www.crummy.com/software/BeautifulSoup/bs4/doc/" target="_blank">BeautifulSoup Documentation</a>
                     <a href="https://selenium-python.readthedocs.io/" target="_blank">Selenium Documentation</a>
+                    <a href="https://www.scrapinghub.com/scrapy-cloud/" target="_blank">Scrapy Framework</a>
                 </div>
 
                 <div class="topic">
-                    <h3>Django</h3>
-                    <p>Backend web development framework</p>
+                    <h3>Full-Stack Django Development</h3>
+                    <p>Build robust web applications with Django. Perfect for creating data science platforms, ML model deployment, and data visualization dashboards.</p>
                     <a href="https://docs.djangoproject.com/" target="_blank">Django Official Documentation</a>
                     <a href="https://www.youtube.com/c/DjangoForBeginners" target="_blank">Dennis Ivy Django Tutorials</a>
+                    <a href="https://www.djangoproject.com/start/" target="_blank">Django Getting Started</a>
+                    <a href="https://djangogirls.com/" target="_blank">Django Girls Tutorial</a>
                 </div>
 
                 <div class="topic">
-                    <h3>Tkinter</h3>
-                    <p>Desktop GUI application development</p>
+                    <h3>Desktop Applications with Tkinter</h3>
+                    <p>Create desktop GUI applications for data science tools and utilities. Build interactive data analysis tools and ML model interfaces.</p>
                     <a href="https://docs.python.org/3/library/tkinter.html" target="_blank">Tkinter Official Documentation</a>
                     <a href="https://www.geeksforgeeks.org/python-tkinter-tutorial/" target="_blank">GeeksforGeeks Tkinter Tutorial</a>
+                    <a href="https://realpython.com/python-gui-tkinter/" target="_blank">Real Python Tkinter Guide</a>
+                </div>
+
+                <div class="topic">
+                    <h3>SQL & Database Management</h3>
+                    <p>Master SQL for data extraction and database management. Essential for working with large datasets and building data pipelines.</p>
+                    <a href="https://www.w3schools.com/sql/" target="_blank">W3Schools SQL Tutorial</a>
+                    <a href="https://www.postgresql.org/docs/" target="_blank">PostgreSQL Documentation</a>
+                    <a href="https://www.mysql.com/" target="_blank">MySQL Official</a>
+                    <a href="https://www.coursera.org/learn/sql-for-data-science" target="_blank">SQL for Data Science</a>
+                </div>
+
+                <div class="topic">
+                    <h3>Data Visualization & Storytelling</h3>
+                    <p>Create compelling data visualizations and dashboards. Learn to communicate insights effectively through visual data storytelling.</p>
+                    <a href="https://plotly.com/python/" target="_blank">Plotly Documentation</a>
+                    <a href="https://streamlit.io/" target="_blank">Streamlit for ML Apps</a>
+                    <a href="https://dash.plotly.com/" target="_blank">Dash by Plotly</a>
+                    <a href="https://www.tableau.com/learn/training" target="_blank">Tableau Training</a>
                 </div>
             </div>
 
             <!-- DEEP LEARNING SECTION -->
-            <div class="section">
-                <h2>🧠 Deep Learning</h2>
+            <div class="section" id="deep-learning">
+                <h2>🧠 Deep Learning & Neural Networks</h2>
                 
                 <div class="topic">
-                    <h3>100 Days of DL by CampusX</h3>
-                    <p>Structured deep learning course</p>
+                    <h3>100 Days of Deep Learning by CampusX</h3>
+                    <p>Comprehensive deep learning course covering neural networks, CNNs, RNNs, transformers, and advanced architectures. Perfect for mastering AI and modern ML techniques.</p>
                     <a href="https://www.youtube.com/playlist?list=PLKnIA16_RmvYZ59L0L-3bpqJMdXHMeOnv" target="_blank">100 Days of DL Playlist</a>
+                    <a href="https://github.com/campusx-official/100-days-of-deep-learning" target="_blank">Deep Learning Code Repository</a>
+                    <a href="https://campusx-official.medium.com/" target="_blank">Deep Learning Articles</a>
                 </div>
 
                 <div class="topic">
-                    <h3>DL Projects by CampusX</h3>
-                    <p>Hands-on deep learning projects</p>
-                    <a href="https://www.youtube.com/c/campusx-official" target="_blank">CampusX Channel</a>
+                    <h3>Advanced Deep Learning Projects</h3>
+                    <p>Build cutting-edge deep learning projects including computer vision, NLP, and generative AI applications. Create portfolio-worthy AI systems.</p>
+                    <a href="https://www.youtube.com/c/campusx-official" target="_blank">CampusX Deep Learning Projects</a>
+                    <a href="https://paperswithcode.com/" target="_blank">Papers with Code</a>
+                    <a href="https://github.com/aimacode/aima-python" target="_blank">AI Algorithms Implementation</a>
                 </div>
 
                 <div class="topic">
-                    <h3>TensorFlow by IBM</h3>
-                    <p>IBM free courses on Coursera</p>
+                    <h3>TensorFlow Professional Certificate by IBM</h3>
+                    <p>Industry-recognized TensorFlow certification from IBM. Master deep learning with TensorFlow 2.x, Keras, and production deployment.</p>
                     <a href="https://www.coursera.org/professional-certificates/tf-introduction" target="_blank">TensorFlow Professional Certificate</a>
                     <a href="https://www.ibm.com/training" target="_blank">IBM Training Portal</a>
+                    <a href="https://www.tensorflow.org/certification" target="_blank">TensorFlow Developer Certification</a>
                 </div>
 
                 <div class="topic">
-                    <h3>Additional Frameworks</h3>
-                    <p>PyTorch, Keras</p>
-                    <a href="https://pytorch.org/tutorials/" target="_blank">PyTorch Tutorials</a>
+                    <h3>PyTorch & Advanced Frameworks</h3>
+                    <p>Master PyTorch, the preferred framework for research and advanced AI development. Learn dynamic computation graphs and cutting-edge models.</p>
+                    <a href="https://pytorch.org/tutorials/" target="_blank">PyTorch Official Tutorials</a>
                     <a href="https://keras.io/" target="_blank">Keras Documentation</a>
+                    <a href="https://fast.ai/" target="_blank">fast.ai Practical Deep Learning</a>
+                    <a href="https://www.deeplearning.ai/" target="_blank">DeepLearning.ai Courses</a>
+                </div>
+
+                <div class="topic">
+                    <h3>Computer Vision & Image Processing</h3>
+                    <p>Specialize in computer vision applications. Learn CNNs, object detection, image segmentation, and real-time video processing.</p>
+                    <a href="https://opencv.org/" target="_blank">OpenCV Documentation</a>
+                    <a href="https://pytorch.org/vision/" target="_blank">PyTorch Vision</a>
+                    <a href="https://www.coursera.org/learn/computer-vision" target="_blank">Computer Vision Course</a>
                 </div>
             </div>
 
             <!-- DEVOPS SECTION -->
-            <div class="section">
-                <h2>⚙️ DevOps</h2>
+            <div class="section" id="devops">
+                <h2>⚙️ DevOps & Cloud Infrastructure</h2>
                 
                 <div class="topic">
-                    <h3>Containerization</h3>
-                    <p>Docker and container technologies</p>
+                    <h3>Containerization with Docker</h3>
+                    <p>Master Docker containers, container orchestration, and microservices architecture. Essential for deploying ML models and data science applications at scale.</p>
                     <a href="https://www.linkedin.com/learning/docker-essential-training" target="_blank">LinkedIn Learning Docker Course</a>
                     <a href="https://docs.docker.com/" target="_blank">Docker Official Documentation</a>
+                    <a href="https://www.docker.com/101-tutorial/" target="_blank">Docker 101 Tutorial</a>
+                    <a href="https://kubernetes.io/docs/concepts/containers/" target="_blank">Kubernetes Containers</a>
                 </div>
 
                 <div class="topic">
-                    <h3>CI/CD Pipeline</h3>
-                    <p>Continuous Integration & Deployment</p>
+                    <h3>CI/CD Pipeline & Automation</h3>
+                    <p>Build automated CI/CD pipelines for ML and data science projects. Learn Jenkins, GitHub Actions, and DevOps best practices for model deployment.</p>
                     <a href="https://www.linkedin.com/learning/jenkins-essential-training" target="_blank">LinkedIn Learning Jenkins Course</a>
                     <a href="https://www.youtube.com/results?search_query=CI+CD+pipeline+tutorial" target="_blank">YouTube CI/CD Tutorials</a>
-                    <a href="https://github.com/features/actions" target="_blank">GitHub Actions</a>
+                    <a href="https://github.com/features/actions" target="_blank">GitHub Actions Documentation</a>
+                    <a href="https://gitlab.com/features/ci-cd" target="_blank">GitLab CI/CD</a>
                 </div>
 
                 <div class="topic">
-                    <h3>AWS - EC2, RDS & S3</h3>
-                    <p>AWS core services from GFG DevOps</p>
+                    <h3>AWS Cloud Services - EC2, RDS & S3</h3>
+                    <p>Master AWS core services for data science and ML. Learn to deploy scalable applications, manage databases, and store large datasets efficiently.</p>
                     <a href="https://www.geeksforgeeks.org/aws-ec2/" target="_blank">GFG AWS EC2 Tutorial</a>
                     <a href="https://www.geeksforgeeks.org/amazon-rds/" target="_blank">GFG RDS Tutorial</a>
                     <a href="https://www.geeksforgeeks.org/amazon-s3/" target="_blank">GFG S3 Tutorial</a>
+                    <a href="https://aws.amazon.com/training/" target="_blank">AWS Training Portal</a>
                 </div>
 
                 <div class="topic">
-                    <h3>AWS Solutions Architect</h3>
-                    <p>AWS SAA certification course by GFG</p>
+                    <h3>AWS Solutions Architect Certification</h3>
+                    <p>Prepare for AWS SAA certification and become an AWS Solutions Architect. Essential for designing cloud infrastructure for data science applications.</p>
                     <a href="https://www.geeksforgeeks.org/aws-solutions-architect-associate/" target="_blank">GFG AWS SAA Course</a>
                     <a href="https://aws.amazon.com/certification/certified-solutions-architect-associate/" target="_blank">AWS Official SAA Certification</a>
+                    <a href="https://www.udemy.com/course/aws-certified-solutions-architect-associate/" target="_blank">Udemy SAA Course</a>
+                </div>
+
+                <div class="topic">
+                    <h3>Infrastructure as Code (IaC)</h3>
+                    <p>Learn Terraform and CloudFormation for infrastructure automation. Manage cloud resources declaratively and implement DevOps best practices.</p>
+                    <a href="https://www.terraform.io/tutorials" target="_blank">Terraform Tutorials</a>
+                    <a href="https://aws.amazon.com/cloudformation/" target="_blank">AWS CloudFormation</a>
+                    <a href="https://www.ansible.com/" target="_blank">Ansible Automation</a>
                 </div>
             </div>
 
             <!-- CYBERSECURITY SECTION -->
-            <div class="section">
-                <h2>🔐 Cybersecurity</h2>
+            <div class="section" id="cybersecurity">
+                <h2>🔐 Cybersecurity Fundamentals</h2>
                 
                 <div class="topic">
                     <h3>Foundations (CompTIA Track)</h3>
@@ -439,8 +695,8 @@ SITEMAP.XML (create separately later)
             </div>
 
             <!-- DEVSECOPS SECTION -->
-            <div class="section">
-                <h2>🛡️ DevSecOps</h2>
+            <div class="section" id="devsecops">
+                <h2>🛡️ DevSecOps & Security Engineering</h2>
                 
                 <div class="topic">
                     <h3>DevSecOps Fundamentals</h3>
@@ -476,86 +732,112 @@ SITEMAP.XML (create separately later)
             </div>
 
             <!-- MLOPS SECTION -->
-            <div class="section">
-                <h2>🔄 MLOps</h2>
+            <div class="section" id="mlops">
+                <h2>🔄 MLOps & Production ML</h2>
                 
                 <div class="topic">
                     <h3>100 Days of MLOps by CampusX</h3>
-                    <p>MLOps best practices and workflows</p>
+                    <p>Complete MLOps course covering model deployment, monitoring, and production ML systems. Learn best practices for deploying ML models at scale.</p>
                     <a href="https://www.youtube.com/playlist?list=PLKnIA16_Rmvazf3bKb3JD8pLVHm0ySQRR" target="_blank">100 Days of MLOps Playlist</a>
+                    <a href="https://github.com/campusx-official/100-days-of-mlops" target="_blank">MLOps Code Repository</a>
+                    <a href="https://neptune.ai/blog/mlops-roadmap" target="_blank">Neptune MLOps Guide</a>
                 </div>
 
                 <div class="topic">
-                    <h3>ML Model Deployment</h3>
-                    <p>Tools and frameworks for production ML</p>
+                    <h3>ML Model Deployment & Serving</h3>
+                    <p>Deploy machine learning models to production using modern tools and frameworks. Learn model serving, API development, and production optimization.</p>
                     <a href="https://www.mlflow.org/" target="_blank">MLflow Documentation</a>
                     <a href="https://www.kubeflow.org/" target="_blank">Kubeflow Documentation</a>
+                    <a href="https://www.seldon.io/" target="_blank">Seldon Core</a>
+                    <a href="https://bentoml.com/" target="_blank">BentoML</a>
                 </div>
 
                 <div class="topic">
                     <h3>Model Monitoring & Versioning</h3>
-                    <p>Track and manage ML models</p>
+                    <p>Track ML model performance, manage model versions, and implement monitoring systems for production ML applications.</p>
                     <a href="https://dvc.org/" target="_blank">DVC (Data Version Control)</a>
                     <a href="https://github.com/iterative/dvc" target="_blank">DVC GitHub Repository</a>
+                    <a href="https://www.weightsbiases.com/" target="_blank">Weights & Biases</a>
+                    <a href="https://www.arize.com/" target="_blank">Arize AI Monitoring</a>
+                </div>
+
+                <div class="topic">
+                    <h3>Feature Engineering & Data Pipelines</h3>
+                    <p>Build robust data pipelines and feature stores for ML systems. Learn feature engineering, data validation, and pipeline orchestration.</p>
+                    <a href="https://www.featuretools.com/" target="_blank">FeatureTools</a>
+                    <a href="https://www.apache.org/airflow/" target="_blank">Apache Airflow</a>
+                    <a href="https://prefect.io/" target="_blank">Prefect</a>
+                    <a href="https://www.feast.dev/" target="_blank">Feast Feature Store</a>
                 </div>
             </div>
 
             <!-- REINFORCEMENT LEARNING SECTION -->
-            <div class="section">
-                <h2>🎯 Reinforcement Learning</h2>
+            <div class="section" id="reinforcement-learning">
+                <h2>🎯 Advanced AI & Reinforcement Learning</h2>
                 
                 <div class="topic">
-                    <h3>GPT Models</h3>
-                    <p>Large Language Models and Transformers</p>
+                    <h3>Large Language Models & Transformers</h3>
+                    <p>Master GPT models, transformers, and modern NLP techniques. Learn to build and fine-tune language models for various applications.</p>
                     <a href="https://openai.com/api/" target="_blank">OpenAI API Documentation</a>
                     <a href="https://huggingface.co/transformers/" target="_blank">HuggingFace Transformers</a>
                     <a href="https://www.youtube.com/results?search_query=attention+is+all+you+need" target="_blank">Attention Mechanism Tutorials</a>
+                    <a href="https://github.com/openai/gpt-3" target="_blank">GPT-3 Repository</a>
                 </div>
 
                 <div class="topic">
-                    <h3>Self-Driving Cars</h3>
-                    <p>Autonomous vehicle technologies</p>
+                    <h3>Autonomous Systems & Self-Driving Cars</h3>
+                    <p>Learn autonomous vehicle technologies, computer vision for navigation, and sensor fusion. Build self-driving car simulations and models.</p>
                     <a href="https://github.com/udacity/self-driving-car" target="_blank">Udacity Self-Driving Car Project</a>
                     <a href="https://www.coursera.org/specializations/self-driving-cars" target="_blank">Coursera Self-Driving Cars Specialization</a>
+                    <a href="https://www.carla.org/" target="_blank">CARLA Simulator</a>
                 </div>
 
                 <div class="topic">
-                    <h3>RL Fundamentals</h3>
-                    <p>Q-Learning, Policy Gradient Methods</p>
+                    <h3>Reinforcement Learning Fundamentals</h3>
+                    <p>Master Q-Learning, Policy Gradient Methods, and Deep RL. Learn to build intelligent agents that learn from interaction.</p>
                     <a href="https://www.deepmind.com/" target="_blank">DeepMind Research</a>
                     <a href="https://stable-baselines3.readthedocs.io/" target="_blank">Stable Baselines3 Library</a>
+                    <a href="https://www.coursera.org/learn/reinforcement-learning" target="_blank">RL Specialization</a>
+                    <a href="https://gym.openai.com/" target="_blank">OpenAI Gym</a>
                 </div>
             </div>
 
             <!-- END-TO-END PROJECTS SECTION -->
-            <div class="section">
-                <h2>🎓 End-to-End Projects</h2>
+            <div class="section" id="projects">
+                <h2>🎓 End-to-End Portfolio Projects</h2>
                 
                 <div class="topic">
-                    <h3>Full ML Pipeline Projects</h3>
-                    <p>Complete machine learning solutions</p>
+                    <h3>Complete ML Pipeline Projects</h3>
+                    <p>Build production-ready machine learning solutions from data collection to model deployment. Create impressive portfolio projects.</p>
                     <a href="https://www.kaggle.com/competitions" target="_blank">Kaggle Competitions</a>
                     <a href="https://github.com/topics/machine-learning-projects" target="_blank">GitHub ML Projects</a>
+                    <a href="https://paperswithcode.com/sota" target="_blank">State-of-the-Art Models</a>
                 </div>
 
                 <div class="topic">
-                    <h3>Full DL Pipeline Projects</h3>
-                    <p>Deep learning from data to deployment</p>
+                    <h3>Deep Learning Production Systems</h3>
+                    <p>Deploy deep learning models to production with REST APIs, real-time inference, and monitoring. Build scalable AI applications.</p>
                     <a href="https://www.youtube.com/results?search_query=end+to+end+deep+learning+project" target="_blank">YouTube End-to-End Tutorials</a>
+                    <a href="https://github.com/serve/serve" target="_blank">Torch Serve</a>
+                    <a href="https://www.tensorflow.org/tfx/guide/serving" target="_blank">TensorFlow Serving</a>
                 </div>
 
                 <div class="topic">
-                    <h3>Portfolio Projects</h3>
-                    <p>Build real-world applications</p>
+                    <h3>Portfolio & Career Development</h3>
+                    <p>Build a professional portfolio, prepare for interviews, and launch your data science career. Learn resume building and networking.</p>
                     <a href="https://github.com" target="_blank">GitHub for Version Control</a>
                     <a href="https://www.heroku.com/" target="_blank">Heroku Deployment Platform</a>
+                    <a href="https://www.linkedin.com/" target="_blank">LinkedIn Professional Network</a>
+                    <a href="https://www.glassdoor.com" target="_blank">Glassdoor Career Insights</a>
                 </div>
 
                 <div class="topic">
-                    <h3>Data to Insights</h3>
-                    <p>Complete data science projects</p>
+                    <h3>Data Science Blog & Community</h3>
+                    <p>Join data science communities, contribute to blogs, and stay updated with latest trends. Network with professionals and share knowledge.</p>
                     <a href="https://medium.com/towards-data-science" target="_blank">Towards Data Science Blog</a>
                     <a href="https://analyticsvidhya.com/" target="_blank">Analytics Vidhya Community</a>
+                    <a href="https://www.kdnuggets.com/" target="_blank">KDnuggets</a>
+                    <a href="https://datascience.stackexchange.com/" target="_blank">Data Science Stack Exchange</a>
                 </div>
             </div>
         </div>
