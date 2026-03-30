@@ -14,6 +14,10 @@
       "use": "@vercel/static"
     },
     {
+      "src": "favicon.ico",
+      "use": "@vercel/static"
+    },
+    {
       "src": "google23498ce14e712999.html",
       "use": "@vercel/static"
     }
@@ -30,6 +34,10 @@
     {
       "src": "/sitemap.xml",
       "dest": "/sitemap.xml"
+    },
+    {
+      "src": "/favicon.ico",
+      "dest": "/favicon.ico"
     },
     {
       "src": "/google23498ce14e712999.html",
