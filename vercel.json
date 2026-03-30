@@ -18,6 +18,14 @@
       "use": "@vercel/static"
     },
     {
+      "src": "og-image.jpg",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "twitter-image.jpg",
+      "use": "@vercel/static"
+    },
+    {
       "src": "google23498ce14e712999.html",
       "use": "@vercel/static"
     }
@@ -38,6 +46,14 @@
     {
       "src": "/favicon.ico",
       "dest": "/favicon.ico"
+    },
+    {
+      "src": "/og-image.jpg",
+      "dest": "/og-image.jpg"
+    },
+    {
+      "src": "/twitter-image.jpg",
+      "dest": "/twitter-image.jpg"
     },
     {
       "src": "/google23498ce14e712999.html",
