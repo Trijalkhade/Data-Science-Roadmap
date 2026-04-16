@@ -99,3 +99,8 @@ This one is:
 
 ```bash
 git clone https://github.com/Trijalkhade/Data-Science-Roadmap.git
+```
+
+---
+
+Copyright © 2026 Trijal Khade. All rights reserved.
